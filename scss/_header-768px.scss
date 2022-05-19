@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+  #header {
+    #header-img {
+      margin: 0 0 0 8%;
+    }
+
+    #nav-768px {
+      width: 100%;
+      flex-direction: row;
+
+      ul {
+        width: 40%;
+        flex-direction: row;
+        margin: 1em auto;
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin: 0 12%;
+
+          a span {
+            display: block;
+            font-size: 3vh;
+          }
+        }
+      }
+    }
+
+    #hamburger-menu {
+      display: none;
+    }
+  }
+}
