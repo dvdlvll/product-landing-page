@@ -1,0 +1,42 @@
+@media only screen and (min-width: 768px) {
+  .about-page-section-1,
+  .about-page-section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .about-img {
+      width: 40vw;
+      margin: 3% 3%;
+    }
+
+    .about-text {
+      width: 60vw;
+      margin: 3% 3%;
+
+      h1 {
+        font-size: 7.5vh;
+      }
+
+      p {
+        font-size: 3vh;
+      }
+    }
+  }
+
+  .about-page-section-1 {
+    flex-direction: row;
+
+    .about-text {
+      text-align: left;
+    }
+  }
+
+  .about-page-section-2 {
+    flex-direction: row-reverse;
+
+    .about-text {
+      text-align: right;
+    }
+  }
+}

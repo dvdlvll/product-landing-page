@@ -1,0 +1,65 @@
+#about-page {
+  background: url("./images/bg-wood.jpg");
+  background-size: 100% auto;
+  background-position: top center;
+
+  height: 100%;
+  position: relative;
+}
+
+.about-page-section-1,
+.about-page-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  .about-img {
+    width: 85%;
+    margin: 5% auto 1%;
+    height: fit-content;
+
+    img {
+      width: inherit;
+      border: 2px solid $link-color;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9),
+        0px 0px 10px rgba(0, 0, 0, 0.9);
+    }
+  }
+
+  .about-text {
+    width: 95%;
+    margin-bottom: 2%;
+
+    h1 {
+      font-family: $cormorant;
+      font-size: 4.5vw;
+      padding-bottom: 2%;
+    }
+
+    p {
+      font-family: $noto-sans;
+      font-size: 2vw;
+      padding-bottom: 2%;
+    }
+  }
+}
+
+#about-page::before {
+  background: url("./images/line-small.png");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 0.5vw;
+}

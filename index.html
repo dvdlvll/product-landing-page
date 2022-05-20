@@ -7,7 +7,6 @@
 
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="./scss/styles.css" />
-    <script type="text/javascript" src="./js/popup.js"></script>
   </head>
 
   <body>
@@ -21,10 +20,7 @@
               <a href="#about-page"><span>ABOUT</span></a>
             </li>
             <li class="nav-link">
-              <a href="#"><span>NEW MONSTERS</span></a>
-            </li>
-            <li class="nav-link">
-              <a href="#"><span>NEW LOCALE</span></a>
+              <a href="#monster-page"><span>NEW MONSTERS</span></a>
             </li>
             <li class="nav-link">
               <a href="#preorder-page"><span>PRE-ORDER</span></a>
@@ -47,10 +43,7 @@
             <a href="#about-page"><span>ABOUT</span></a>
           </li>
           <li class="nav-link">
-            <a href="#"><span>NEW MONSTERS</span></a>
-          </li>
-          <li class="nav-link">
-            <a href="#"><span>NEW LOCALE</span></a>
+            <a href="#monster-page"><span>NEW MONSTERS</span></a>
           </li>
           <li class="nav-link">
             <a href="#preorder-page"><span>PRE-ORDER</span></a>
@@ -75,7 +68,7 @@
       </div>
 
       <div class="first-view-section-2">
-        <a href="https://www.youtube.com/watch?v=pBFQdxA-apI"
+        <a class="popup-youtube" href="./video.html"
           ><img id="video" src="./scss/images/video_thumb-220510.jpg" />
           <img id="play" src="./scss/images/play-icon.png" />
         </a>
@@ -133,6 +126,58 @@
       </div>
     </div>
 
+    <!--monster-->
+    <div id="monster-page">
+      <div class="monster-text"><h1>New upcoming monsters await ...</h1></div>
+      <div class="monster-box">
+        <div class="monster-container">
+          <img src="./scss/images/malzeno.jpg" />
+          <h1>Malzeno</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/garangolm.jpg" />
+          <h1>Garangolm</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/lunagaron.jpg" />
+          <h1>Lunagaron</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/seregios.jpg" />
+          <h1>Seregios</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/aurora.jpg" />
+          <h1>Aurora Somnacanth</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/magma.jpg" />
+          <h1>Magma Almudron</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/astalos.jpg" />
+          <h1>Astalos</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/bishaten.jpg" />
+          <h1>Blood Orange Bishaten</h1>
+        </div>
+
+        <div class="monster-container">
+          <img src="./scss/images/crab.jpg" />
+          <h1>Shogun Ceanataur</h1>
+        </div>
+      </div>
+      <div class="monster-text"><h1>... and many more!</h1></div>
+    </div>
+
     <!--preorder-->
     <div>
       <div id="preorder-page">
@@ -151,5 +196,14 @@
         </div>
       </div>
     </div>
+
+    <!--footer-->
+    <footer>
+      <p>Made in 2021 by Dave Lavilla.</p>
+      <p>
+        This site was made for educational purposes only, and is not affiliated
+        with the Monster Hunter franchise.
+      </p>
+    </footer>
   </body>
 </html>

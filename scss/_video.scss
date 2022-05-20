@@ -1,0 +1,31 @@
+.video-container {
+  background: url("./images/bg-red.jpg");
+  background-size: 100% auto;
+  background-position: top center;
+
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .video-box {
+    .exit {
+      a {
+        font-family: $noto-sans;
+        font-weight: 700;
+        font-size: 3vw;
+        text-decoration: none;
+        color: white;
+        text-align: right;
+      }
+
+      a:hover {
+        color: $link-hover;
+        transition: 1s ease;
+      }
+    }
+  }
+}

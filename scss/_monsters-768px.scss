@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+  #monster-page {
+    .monster-text {
+      margin-top: 2%;
+
+      h1 {
+        font-size: 4.5vw;
+
+        margin-bottom: 3%;
+      }
+    }
+
+    .monster-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .monster-container {
+        width: 30vw;
+
+        img {
+          width: inherit;
+        }
+
+        h1 {
+          font-size: 2vw;
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
+}
