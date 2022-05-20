@@ -1,4 +1,4 @@
-#first-view {
+.first-view {
   height: 100%;
 
   background-image: url("./images/mv-am-sp.jpg");
@@ -86,4 +86,8 @@
       font-size: 4vw;
     }
   }
+}
+
+.first-view-dark {
+  background-image: url(./images/mv-pm-sp.jpg);
 }

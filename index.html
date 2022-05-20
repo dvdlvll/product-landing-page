@@ -7,6 +7,8 @@
 
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="./scss/styles.css" />
+
+    <script src="./js/darkmode.js"></script>
   </head>
 
   <body>
@@ -24,6 +26,9 @@
             </li>
             <li class="nav-link">
               <a href="#preorder-page"><span>PRE-ORDER</span></a>
+            </li>
+            <li class="nav-link">
+              <a onclick="darkMode()"><span>TOGGLE DARK MODE</span></a>
             </li>
           </ul>
         </nav>
@@ -48,12 +53,15 @@
           <li class="nav-link">
             <a href="#preorder-page"><span>PRE-ORDER</span></a>
           </li>
+          <li class="nav-link">
+            <a onclick="darkMode()"><span>TOGGLE DARK MODE</span></a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!--main page-->
-    <div id="first-view">
+    <div class="first-view">
       <div class="first-view-section-1">
         <img
           src="./scss/images/logo-sb-global.png"

@@ -1,5 +1,5 @@
 @media only screen and (min-width: 768px) {
-  #first-view {
+  .first-view {
     height: 90vh;
 
     background-image: url("./images/mv-am.jpg");
@@ -51,5 +51,9 @@
         font-size: 3vh;
       }
     }
+  }
+
+  .first-view-dark {
+    background-image: url(./images/mv-pm.jpg);
   }
 }

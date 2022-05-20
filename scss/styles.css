@@ -229,7 +229,7 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
 /*===========
 ==firstview==
 ===========*/
-#first-view {
+.first-view {
   height: 100%;
   background-image: url("./images/mv-am-sp.jpg");
   background-attachment: fixed;
@@ -250,32 +250,32 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
   text-align: center;
 }
 
-#first-view div:nth-child(1) {
+.first-view div:nth-child(1) {
   margin: 90% auto 3%;
 }
 
-#first-view div:nth-child(1) img {
+.first-view div:nth-child(1) img {
   width: 80vw;
 }
 
-#first-view div:nth-child(1) h2 {
+.first-view div:nth-child(1) h2 {
   font-family: "Noto Serif", serif;
   font-size: 6vw;
 }
 
-#first-view div:nth-child(1) h1 {
+.first-view div:nth-child(1) h1 {
   font-family: "Noto Serif", serif;
   font-size: 7.5vw;
 }
 
-#first-view div:nth-child(1) a {
+.first-view div:nth-child(1) a {
   font-family: "Noto Sans", sans-serif;
   font-size: 6vw;
   color: white;
   text-decoration: none;
 }
 
-#first-view div:nth-child(1) a div {
+.first-view div:nth-child(1) a div {
   background-color: #c21212;
   padding: 3vw;
   max-width: 80%;
@@ -286,13 +286,13 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
   letter-spacing: 0px;
 }
 
-#first-view div:nth-child(1) a div:hover {
+.first-view div:nth-child(1) a div:hover {
   background-color: #ab0743;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
-#first-view div:nth-child(2) {
+.first-view div:nth-child(2) {
   position: relative;
   margin: 3% auto;
   width: 80vw;
@@ -301,7 +301,7 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
   height: fit-content;
 }
 
-#first-view div:nth-child(2) #video {
+.first-view div:nth-child(2) #video {
   margin: 3% auto;
   width: 100%;
   z-index: 1;
@@ -310,7 +310,7 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
 
-#first-view div:nth-child(2) #play {
+.first-view div:nth-child(2) #play {
   width: 20vw;
   position: absolute;
   top: 50%;
@@ -319,13 +319,17 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
           transform: translate(-50%, -50%);
 }
 
-#first-view div:nth-child(2) h2 {
+.first-view div:nth-child(2) h2 {
   font-family: "Cormorant", "Cormorant Garamond", serif;
   font-size: 4vw;
 }
 
+.first-view-dark {
+  background-image: url(./images/mv-pm-sp.jpg);
+}
+
 @media only screen and (min-width: 768px) {
-  #first-view {
+  .first-view {
     height: 90vh;
     background-image: url("./images/mv-am.jpg");
     background-attachment: fixed;
@@ -343,36 +347,39 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #first-view div:nth-child(1) {
+  .first-view div:nth-child(1) {
     margin: 6vw 3vw;
   }
-  #first-view div:nth-child(1) img {
+  .first-view div:nth-child(1) img {
     width: 45vh;
     margin-bottom: 2vh;
   }
-  #first-view div:nth-child(1) h2 {
+  .first-view div:nth-child(1) h2 {
     font-size: 3vh;
   }
-  #first-view div:nth-child(1) h1 {
+  .first-view div:nth-child(1) h1 {
     font-size: 4vh;
   }
-  #first-view div:nth-child(1) a {
+  .first-view div:nth-child(1) a {
     font-size: 4vh;
   }
-  #first-view div:nth-child(1) a div {
+  .first-view div:nth-child(1) a div {
     padding: 10px 20px;
     max-width: 80%;
     margin-top: 6vh;
   }
-  #first-view div:nth-child(2) {
+  .first-view div:nth-child(2) {
     margin: 44vh 3vw;
     width: 45vh;
   }
-  #first-view div:nth-child(2) #play {
+  .first-view div:nth-child(2) #play {
     width: 10vh;
   }
-  #first-view div:nth-child(2) h2 {
+  .first-view div:nth-child(2) h2 {
     font-size: 3vh;
+  }
+  .first-view-dark {
+    background-image: url(./images/mv-pm.jpg);
   }
 }
 
@@ -785,5 +792,16 @@ video-box
   color: #e8be3f;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+}
+
+/*darkmode*/
+.dark-mode {
+  background: url("./images/mv-pm-sp.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+  .dark-mode {
+    background: url("./images/mv-pm.jpg");
+  }
 }
 /*# sourceMappingURL=styles.css.map */
