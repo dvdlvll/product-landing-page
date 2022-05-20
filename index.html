@@ -12,22 +12,22 @@
 
   <body>
     <!-- header -->
-    <header id="header">
+    <header>
       <input type="checkbox" id="hamburger-input" />
       <label id="hamburger-menu" for="hamburger-input">
         <nav id="nav-mobile">
           <ul>
-            <li>
-              <a href="#"><span>ABOUT</span></a>
+            <li class="nav-link">
+              <a href="#about-page"><span>ABOUT</span></a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="#"><span>NEW MONSTERS</span></a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="#"><span>NEW LOCALE</span></a>
             </li>
-            <li>
-              <a href="#"><span>PRE-ORDER</span></a>
+            <li class="nav-link">
+              <a href="#preorder-page"><span>PRE-ORDER</span></a>
             </li>
           </ul>
         </nav>
@@ -43,27 +43,25 @@
         </a>
 
         <ul>
-          <li>
-            <a href="#"><span>ABOUT</span></a>
+          <li class="nav-link">
+            <a href="#about-page"><span>ABOUT</span></a>
           </li>
-          <li>
+          <li class="nav-link">
             <a href="#"><span>NEW MONSTERS</span></a>
           </li>
-          <li>
+          <li class="nav-link">
             <a href="#"><span>NEW LOCALE</span></a>
           </li>
-          <li>
-            <a href="#"><span>PRE-ORDER</span></a>
+          <li class="nav-link">
+            <a href="#preorder-page"><span>PRE-ORDER</span></a>
           </li>
         </ul>
       </nav>
     </header>
 
     <!--main page-->
-    <div class="border-small"></div>
-
     <div id="first-view">
-      <div>
+      <div class="first-view-section-1">
         <img
           src="./scss/images/logo-sb-global.png"
           alt="MONSTER HUNTER RISE: SUNBREAK"
@@ -71,16 +69,86 @@
         <h2>Massive Expansion</h2>
         <h1>Coming June 30, 2022</h1>
 
-        <a href="#">
+        <a href="#preorder-page">
           <div>Pre-Order Now!</div>
         </a>
       </div>
 
-      <div>
+      <div class="first-view-section-2">
         <a href="https://www.youtube.com/watch?v=pBFQdxA-apI"
           ><img id="video" src="./scss/images/video_thumb-220510.jpg" />
+          <img id="play" src="./scss/images/play-icon.png" />
         </a>
         <h2>Promotional Trailer</h2>
+      </div>
+    </div>
+
+    <!--about-->
+    <div id="about-page">
+      <div class="about-page-section-1">
+        <div class="about-img">
+          <img src="./scss/images/introduction-slide-s-01.jpg" />
+        </div>
+        <div class="about-text">
+          <h1>Introducing Monster Hunter Rise: Sunbreak!</h1>
+          <p>
+            Monster Hunter Rise: Sunbreak is an expansion to the original
+            Monster Hunter Rise.
+          </p>
+          <p>
+            Featuring improved gameplay and nimble-feeling additions to combat
+            mechanics, unique new monsters and hunting locales, and a new
+            difficulty level in the form of Master Rank quests.
+          </p>
+          <p>
+            As the hunter who saved Kamura from calamity, you must now journey
+            to the far-off reaches of Elgado, an outpost near a Kingdom beset by
+            a sinister new nemesis—the elder dragon Malzeno!
+          </p>
+        </div>
+      </div>
+
+      <div class="about-page-section-2">
+        <div class="about-img">
+          <img src="./scss/images/introduction-slide-02.jpg" />
+        </div>
+        <div class="about-text">
+          <h1>The Hunt Begins in a Far-off Land...</h1>
+          <p>
+            Kamura Village is finally at peace, having fought off an onslaught
+            of monster attacks known as the Rampage.
+          </p>
+          <p>
+            That hard-earned peace is disrupted by the unexpected appearance of
+            the wolf-like monster Lunagaron in the Shrine Ruins.
+          </p>
+          <p>
+            In the Shrine Ruins, the hunter meets Fiorayne, a knight of the
+            Royal Order. Fiorayne asks for the hunter's help in investigating
+            why monsters from the Kingdom are becoming violently aggressive and
+            invading other territories, including Kamura. United in their
+            mission, they set off for the far-off outpost of Elgado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--preorder-->
+    <div>
+      <div id="preorder-page">
+        <div class="form-container">
+          <div class="preorder-text">
+            <h1>Pre-order now!</h1>
+            <h2>
+              Receive news and updates about Monster Hunter Rise: Sunbreak, and
+              be notified once the game is ready to play.
+            </h2>
+          </div>
+          <form id="form" action="" method="get" target="_blank">
+            <input type="email" id="email" placeholder="Type your email here" />
+            <input type="submit" value="Subscribe" id="submit" />
+          </form>
+        </div>
       </div>
     </div>
   </body>

@@ -1,9 +1,5 @@
 @import "./reset", "./variables";
 
-body {
-  background-color: pink;
-}
-
 /*==========
 ===header===  
 ==========*/
@@ -11,21 +7,39 @@ body {
 @import "./_header-mobile";
 @import "./header-768px";
 
-/*==========
-==contents==
-==========*/
+/*===========
+==firstview==
+===========*/
 
-#first-view {
+@import "./firstview-mobile";
+@import "./firstview-768px";
+
+/*===========
+==preorders==
+===========*/
+
+@import "./preorder-mobile";
+@import "./preorder-768px";
+
+/*========
+about page
+========*/
+
+#about-page {
+  background: url("./images/bg-red.jpg");
+  background-size: 100% auto;
+  background-position: top center;
+
   height: 100%;
+  position: relative;
+}
 
-  background-image: url("./images/mv-am-sp.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-
+.about-page-section-1,
+.about-page-section-2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   color: white;
 
@@ -34,117 +48,88 @@ body {
   letter-spacing: 0.1em;
   text-align: center;
 
-  div:nth-child(1) {
-    margin: 90% auto 3%;
+  .about-img {
+    width: 85%;
+    margin: 5% auto 1%;
+    height: fit-content;
 
     img {
-      width: 80vw;
-    }
-
-    h2 {
-      font-family: $noto-serif;
-      font-size: 6vw;
-    }
-
-    h1 {
-      font-family: $noto-serif;
-      font-size: 7.5vw;
-    }
-
-    a {
-      font-family: $noto-sans;
-      font-size: 6vw;
-      color: white;
-      text-decoration: none;
-
-      div {
-        background-color: $primary-color;
-        padding: 10px;
-        max-width: 80%;
-        margin-top: 8vw;
-        border: 3px white;
-        border-style: double;
-        text-shadow: none;
-        letter-spacing: 0px;
-      }
-
-      div:hover {
-        background-color: $primary-color-hover;
-        transition: 0.6s;
-      }
-    }
-  }
-
-  div:nth-child(2) {
-    margin-bottom: 3%;
-
-    #video {
-      margin-bottom: 2%;
-      width: 80vw;
-      z-index: 1;
-      border: 1px solid white;
+      width: inherit;
+      border: 2px solid $link-color;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9),
         0px 0px 10px rgba(0, 0, 0, 0.9);
     }
+  }
 
-    h2 {
+  .about-text {
+    width: 95%;
+    margin-bottom: 2%;
+
+    h1 {
       font-family: $cormorant;
-      font-size: 4vw;
+      font-size: 4.5vw;
+      padding-bottom: 2%;
+    }
+
+    p {
+      font-family: $noto-sans;
+      font-size: 2vw;
+      padding-bottom: 2%;
     }
   }
 }
 
+#about-page::before {
+  background: url("./images/line-small.png");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 0.5vw;
+}
+
 @media only screen and (min-width: 768px) {
-  #first-view {
-    height: 100vh;
-
-    background-image: url("./images/mv-am.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+  .about-page-section-1,
+  .about-page-section-2 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
-    div:nth-child(1) {
-      margin: 6vw 3vw;
-
-      img {
-        width: 45vh;
-        margin-bottom: 2vh;
-      }
-
-      h2 {
-        font-size: 3vh;
-      }
-
-      h1 {
-        font-size: 4vh;
-      }
-
-      a {
-        font-size: 4vh;
-
-        div {
-          padding: 10px 20px;
-          max-width: 80%;
-          margin-top: 6vh;
-        }
-      }
+    .about-img {
+      width: 40vw;
+      margin: 3% 3%;
     }
 
-    div:nth-child(2) {
-      margin: 44vh 3vw;
+    .about-text {
+      width: 60vw;
+      margin: 3% 3%;
 
-      #video {
-        width: 45vh;
+      h1 {
+        font-size: 7.5vh;
       }
 
-      h2 {
+      p {
         font-size: 3vh;
       }
+    }
+  }
+
+  .about-page-section-1 {
+    flex-direction: row;
+
+    .about-text {
+      text-align: left;
+    }
+  }
+
+  .about-page-section-2 {
+    flex-direction: row-reverse;
+
+    .about-text {
+      text-align: right;
     }
   }
 }
