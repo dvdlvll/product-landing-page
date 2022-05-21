@@ -330,7 +330,7 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
 
 @media only screen and (min-width: 768px) {
   .first-view {
-    height: 90vh;
+    height: 100%;
     background-image: url("./images/mv-am.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -794,14 +794,97 @@ video-box
   transition: 1s ease;
 }
 
-/*darkmode*/
-.dark-mode {
-  background: url("./images/mv-pm-sp.jpg");
+/*=======
+thank-you
+=======*/
+.thank-you-page {
+  height: 100%;
+  background-image: url("./images/mv-am-sp.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.thank-you-page .thank-you-container {
+  margin: 50% auto 5%;
+}
+
+.thank-you-page .thank-you-container .thank-you-text h1 {
+  font-family: "Cormorant", "Cormorant Garamond", serif;
+  font-size: 5vw;
+}
+
+.thank-you-page .thank-you-container .thank-you-text p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vw;
+}
+
+.thank-you-page .thank-you-container .thank-you-text a {
+  color: #c0ab5a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.thank-you-page .thank-you-container .thank-you-text a:hover {
+  color: #e8be3f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.thank-you-page-dark {
+  background-image: url("./images/mv-pm-sp.jpg");
 }
 
 @media only screen and (min-width: 768px) {
-  .dark-mode {
-    background: url("./images/mv-pm.jpg");
+  .thank-you-page {
+    height: 88vh;
+    background-image: url("./images/mv-am.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .thank-you-page .thank-you-container {
+    margin: 40vh auto 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .thank-you-page .thank-you-container .thank-you-img {
+    margin: 5% 5% 0%;
+  }
+  .thank-you-page .thank-you-container .thank-you-text {
+    width: 60vw;
+    text-align: left;
+  }
+  .thank-you-page .thank-you-container .thank-you-text h1 {
+    font-size: 7.5vh;
+  }
+  .thank-you-page .thank-you-container .thank-you-text p {
+    font-size: 3vh;
+  }
+  .thank-you-page-dark {
+    background-image: url("./images/mv-pm.jpg");
   }
 }
 /*# sourceMappingURL=styles.css.map */

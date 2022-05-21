@@ -1,0 +1,51 @@
+.thank-you-page {
+  height: 100%;
+
+  background-image: url("./images/mv-am-sp.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  color: white;
+
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  .thank-you-container {
+    margin: 50% auto 5%;
+
+    .thank-you-text {
+      h1 {
+        font-family: $cormorant;
+        font-size: 5vw;
+      }
+
+      p {
+        font-family: $noto-sans;
+        font-size: 2vw;
+      }
+
+      a {
+        color: $link-color;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: $link-hover;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.thank-you-page-dark {
+  background-image: url("./images/mv-pm-sp.jpg");
+}

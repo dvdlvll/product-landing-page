@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MONSTER HUNTER RISE: SUNBREAK</title>
+    <link rel="stylesheet" href="./scss/styles.css" />
+
+    <script src="./js/darkmode.js" defer></script>
+    <script src="./js/email.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <input type="checkbox" id="hamburger-input" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="nav-mobile">
+          <ul>
+            <li class="nav-link">
+              <a href="#about-page"><span>ABOUT</span></a>
+            </li>
+            <li class="nav-link">
+              <a href="#monster-page"><span>NEW MONSTERS</span></a>
+            </li>
+            <li class="nav-link">
+              <a href="#preorder-page"><span>PRE-ORDER</span></a>
+            </li>
+            <li class="nav-link">
+              <a onclick="darkMode()"><span>TOGGLE DARK MODE</span></a>
+            </li>
+          </ul>
+        </nav>
+      </label>
+
+      <nav id="nav-768px">
+        <a href="./index.html" id="logo">
+          <img
+            src="./scss/images/logo-sb-global.png"
+            id="header-img"
+            alt="MONSTER HUNTER RISE: SUNBREAK"
+          />
+        </a>
+
+        <ul>
+          <li class="nav-link">
+            <a href="#about-page"><span>ABOUT</span></a>
+          </li>
+          <li class="nav-link">
+            <a href="#monster-page"><span>NEW MONSTERS</span></a>
+          </li>
+          <li class="nav-link">
+            <a href="#preorder-page"><span>PRE-ORDER</span></a>
+          </li>
+          <li class="nav-link">
+            <a onclick="darkMode()"><span>TOGGLE DARK MODE</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--thank you page-->
+    <div class="thank-you-page">
+      <div class="thank-you-container">
+        <div class="thank-you-img">
+          <img src="./scss/images/main.png" id="success-img" alt="SUCCESS" />
+        </div>
+        <div class="thank-you-text">
+          <h1>Success!</h1>
+          <p id="email"></p>
+          <p>
+            click <a href="./index.html">here</a> to go back to the main page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@media only screen and (min-width: 768px) {
+  .thank-you-page {
+    height: 88vh;
+
+    background-image: url("./images/mv-am.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .thank-you-container {
+      margin: 40vh auto 0%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .thank-you-img {
+        margin: 5% 5% 0%;
+      }
+
+      .thank-you-text {
+        width: 60vw;
+        text-align: left;
+
+        h1 {
+          font-size: 7.5vh;
+        }
+
+        p {
+          font-size: 3vh;
+        }
+      }
+    }
+  }
+
+  .thank-you-page-dark {
+    background-image: url("./images/mv-pm.jpg");
+  }
+}
