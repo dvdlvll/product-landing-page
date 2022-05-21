@@ -11,7 +11,6 @@
 ===header===  
 ==========*/
 header {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +330,7 @@ header #hamburger-input:checked + #hamburger-menu #nav-mobile {
 
 @media only screen and (min-width: 768px) {
   .first-view {
-    height: 100%;
+    height: 88vh;
     background-image: url("./images/mv-am.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
